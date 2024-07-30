@@ -1,5 +1,5 @@
 export default function cleanSet(set, startString) {
-  if (startString.length === 0 || typeof set !== 'object') {
+  if (startString.length === 0 || typeof set !== 'object' || typeof startstring !== 'string') {
     return '';
   }
   const wordStartWith = [...set]
