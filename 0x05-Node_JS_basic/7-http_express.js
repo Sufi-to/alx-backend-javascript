@@ -25,6 +25,10 @@ app.get('/students', async (req, res) => {
 
     console.log = originalConsoleLog;
 
+    if (output.endsWith('\n')) {
+      output = output.slice(0, -1);
+    }
+
     res.send(output);
   } catch (err) {
     res.status(500).send('Cannot load the database');

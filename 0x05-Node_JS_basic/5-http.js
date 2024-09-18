@@ -26,6 +26,9 @@ const app = http.createServer(async (request, response) => {
 
       console.log = originalConsoleLog;
 
+      if (output.endsWith('\n')) {
+        output = output.slice(0, -1);
+      }
       response.end(output);
     } catch (err) {
       response.statusCode = 500;
