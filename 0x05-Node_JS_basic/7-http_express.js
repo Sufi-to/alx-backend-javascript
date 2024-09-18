@@ -17,6 +17,7 @@ app.get('/students', async (req, res) => {
     const originalConsoleLog = console.log;
 
     console.log = (msg) => {
+      output += 'This is the list of our students\n';
       output += `${msg}\n`;
     };
 

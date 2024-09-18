@@ -18,6 +18,7 @@ const app = http.createServer(async (request, response) => {
       const originalConsoleLog = console.log;
 
       console.log = (msg) => {
+        output += 'This is the list of our students\n';
         output += `${msg}\n`;
       };
 
