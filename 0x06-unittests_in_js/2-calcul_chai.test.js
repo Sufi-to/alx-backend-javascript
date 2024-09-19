@@ -16,7 +16,7 @@ describe('calculateNumber', () => {
       expect(calculateNumber('SUBTRACT', 5, 1)).to.equal(4);
     });
     it('should return 1 when SUBTRACT, 4.3, 5.3 are given', () => {
-      expect(calculateNumber('SUBTRACT', 4.3, 5.3)).to.equal(1);
+      expect(calculateNumber('SUBTRACT', 4.3, 5.3)).to.equal(-1);
     });
   });
 
